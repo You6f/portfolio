@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">JIJJI Yousif</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Profil</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">JIJJI Yousif</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Profil</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profil.png" alt="Yousif JIJJI profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je m'appelle</p>
+        <h1 class="title">JIJJI Yousif</h1>
+        <p class="section__text__p2">Étudiant à Polytech Lyon</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv.pdf')"
+          >
+            Mon CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section id="about">
+      <!-- <p class="section__text__p1">Get To Know More</p>-->
+      
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+
+        <div class="about-details-container">
+          <div class="about-containers">
+
+            <div class="details-container">
+              <p>Je suis étudiant en 2ème année de PEIP (Parcours des écoles d'ingénieurs Polytech)
+                 à Lyon, option informatique. Je suis passionné par l'électronique embarquée et l'informatique,
+                  et je suis à la recherche d'une alternance pour une durée de 3 ans dès ma rentrée en cycle ingénieur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Electronique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/arduino-icon-7.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Arduino</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/esp32.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ESP32</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/raspberryPi.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RaspberryPi</h3>
+
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Informatique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/cpp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/linux.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/htmlcss.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Html/Css</h3>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explorer mes</p>
+      <h1 class="title">Projets</h1>
+      <br>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/led.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automatic ROOM LED</h2>
+            <p>Automatic ROOM LED est un projet d'intégration et d'automatisation de bandes LED, 
+              contrôlées via ESP32 et programmées en C++. Le but est d'allumer automatiquement 
+              des bandes LED disposées dans la chambre en cas d'extinction subite de lumière.
+               Un exemple concret d'utilisation est de permettre à la personne dans la chambre d'éteindre les lumières de la chambre 
+               et de pouvoir rejoindre son lit le soir, grâce aux LED qui s'éteindront automatiquement par la suite.
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/armoire.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+              
+            </div>
+            <h2 class="experience-sub-title project-title">Automatic wardrobe LED</h2>
+            <p>Automatic wardrobe LED est un projet dans le même esprit que le projet Automatic ROOM LED, 
+              mais répondant à une problématique différente. Le but de ce projet est d'éclairer une armoire dès l'ouverture 
+              des portes de l'armoire. L'intensité de la lumière s'adapte à la luminosité externe pour ne pas éblouir dans le noir.</p>
+            
+          </div>
+
+          
+        </div>
+        
+      </div>
+
+    </section>
+    <br> <br> <br> <br><br><br>  <br> <br> <br> <br><br><br>  
+  </section>
+  <section id="projects">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/dash.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">ROOM dashboard </h2>
+          <p>ROOM dashboard est un tableau de bord, qui prend la forme d'un site 
+            web hébergé sur un ESP32 et accessible sur le réseau local. Il permet d'afficher des informations provenant de capteurs disposés dans la chambre, 
+            comme la température et l'humidité. Il permet également de contrôler et paramétrer les LED du projet Automatic ROOM LED.
+          </p>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/8t.png"
+              alt="Project 2"
+              class="project-img"
+            />
+
+          </div>
+          <h2 class="experience-sub-title project-title">8T</h2>
+          <p>The Turbocharged, Topsy-Turvy, Transmutable Tic-Tac-Toe (8T) est un jeu qui réinvente le jeu mythique Tic Tac Toe, en ajoutant de nouvelles règles et un plateau de taille infinie.
+               Le jeu peut être joué localement mais aussi en réseau. Ce projet est réalisé en groupe de trois, dans le cadre de l'UE LIFAPCD et est toujours en cours de développement.
+            
+          </p>
+          
+      
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/connect4ai.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Connect four AI</h2>
+          Connect Four AI est un projet d'implémentation d'intelligences artificielles capables de jouer au jeu Puissance 4,
+           à l'aide d'un bras robotique et d'une interface graphique en Python. Le but final est l'implémentation d'un algorithme de deep learning.
+ 
+        </div>
+        
+        
+      </div>
+      
+    </div>
+
+  </section>
+
+</section>
+<section id="projects">
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/nas.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">NAS Server</h2>
+        <p>Un serveur NAS remplaçant les services de CLOUD traditionnels, pouvant être allumé et éteint depuis une interface web hébergée sur un ESP32.
+        </p>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/sql.png"
+            alt="Project 2"
+            class="project-img"
+          />
+
+        </div>
+        <h2 class="experience-sub-title project-title">SQL/WEB game</h2>
+        <p>Ce jeu est réalisé dans le cadre de l'UE BDW. L'objectif est l'implémentation d'un jeu et d'une base de données capable de sauvegarder le cours d'une partie.
+        </p>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/raspberry.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">RaspberryPi WEB server</h2>
+        
+        Coming soon...
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#contact'"
+/>
+
+</section>
+    
+    <section id="contact">
+      <p class="section__text__p1">N'hésitez pas à me contacter</p>
+      <h1 class="title">Contacter</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:yousifjijji2@gmail.com">yousifjijji2@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="linkedin.com/in/yousifjijji">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+     
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
